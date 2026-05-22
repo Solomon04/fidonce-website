@@ -3,12 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FiDonce — Programs · Training, AAU, Facility</title>
-  <meta name="description" content="Player development programs at FiDonce — group training, private lessons, AAU, summer camps, and facility rentals. Chester, PA." />
+  <title>Programs · Basketball Training, AAU & Facility Rentals — FiDonce, Chester PA</title>
+  <meta name="description" content="FiDonce player development programs in Chester, PA — group skill clinics for ages 8–11, intermediate and high school training, AAU competition, summer camps, and full-court facility rentals." />
+  <meta name="keywords" content="basketball training programs Chester PA, AAU Chester, basketball camps Delaware County, court rental Chester PA, youth basketball clinics" />
+  <meta name="author" content="FiDonce Player Development" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="geo.region" content="US-PA" />
+  <meta name="geo.placename" content="Chester, Pennsylvania" />
+
+  <link rel="canonical" href="https://fidonce.com/offerings" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FiDonce Player Development" />
+  <meta property="og:url" content="https://fidonce.com/offerings" />
+  <meta property="og:title" content="FiDonce Programs · Training, AAU & Facility Rentals" />
+  <meta property="og:description" content="Three programs. One standard. Group training, AAU competition, and facility rentals in Chester, PA." />
+  <meta property="og:image" content="https://fidonce.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="A FiDonce player driving past a defender during training" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FiDonce Programs · Training, AAU & Facility Rentals" />
+  <meta name="twitter:description" content="Three programs. One standard. Group training, AAU competition, and facility rentals in Chester, PA." />
+  <meta name="twitter:image" content="https://fidonce.com/assets/og-image.jpg" />
+
   <link rel="preconnect" href="https://use.typekit.net" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css"></noscript>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data: Breadcrumbs + Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fidonce.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Programs", "item": "https://fidonce.com/offerings" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Basketball Training",
+        "serviceType": "Basketball player development",
+        "provider": { "@type": "LocalBusiness", "name": "FiDonce Player Development", "@id": "https://fidonce.com/#business" },
+        "areaServed": { "@type": "City", "name": "Chester, PA" },
+        "description": "Group skill clinics, private 1-on-1s, and small-group reps for ages 8 through high school. Children's Group (8–11), Intermediate & Middle School, Elite & High School, and Private Lessons.",
+        "offers": {
+          "@type": "Offer",
+          "price": "25.00",
+          "priceCurrency": "USD",
+          "name": "Intro Group Diagnostic",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "AAU & Competition",
+        "serviceType": "AAU basketball competition",
+        "provider": { "@type": "LocalBusiness", "name": "FiDonce Player Development", "@id": "https://fidonce.com/#business" },
+        "areaServed": { "@type": "City", "name": "Chester, PA" },
+        "description": "AAU team tryouts, summer camps, holiday clinics, and invite-only private runs. Real reps against the best players in the region."
+      },
+      {
+        "@type": "Service",
+        "name": "Facility & Court Rentals",
+        "serviceType": "Basketball court rental",
+        "provider": { "@type": "LocalBusiness", "name": "FiDonce Player Development", "@id": "https://fidonce.com/#business" },
+        "areaServed": { "@type": "City", "name": "Chester, PA" },
+        "description": "Hardwood, regulation hoops, scoreboard, full court. Hourly and recurring rentals, full-day tournament buyouts, basketball-specific strength and conditioning.",
+        "url": "https://www.goodrun.app/location/fidonce-player-development?exp=1",
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "name": "Book The Court",
+          "target": "https://www.goodrun.app/location/fidonce-player-development?exp=1"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -22,8 +104,8 @@
       <div class="nav__links">
         <a href="index.html">Home</a>
         <a href="offerings.html" aria-current="page">Programs</a>
-        <a href="#facility">Facility</a>
-        <a href="index.html#story">About</a>
+        <a href="facility.html">Facility</a>
+        <a href="about.html">About</a>
       </div>
       <a href="form.html" class="nav__cta">Book Evaluation</a>
     </div>
@@ -32,8 +114,7 @@
   <!-- INTRO HEADING -->
   <section class="section section--tight">
     <div class="container">
-      <span class="eyebrow">FiDonce Programs · Spring / Summer 2026</span>
-      <h1 class="display" style="margin-top: 24px; max-width: 14ch;">
+      <h1 class="display" style="max-width: 14ch;">
         Three programs.<br/>
         <span class="accent">One standard.</span>
       </h1>
@@ -56,7 +137,7 @@
           </a>
         </li>
         <li class="stat">
-          <a href="#facility" style="display: block;">
+          <a href="facility.html" style="display: block;">
             <div class="stat__num">03<span class="accent">.</span></div>
             <div class="stat__label">Facility &amp; Rentals</div>
           </a>
@@ -76,8 +157,7 @@
     <div class="container">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">The Player Development Process</span>
-          <h2 style="margin-top: 16px;">From inquiry to first session<br/>in <span class="accent">four steps.</span></h2>
+          <h2>From inquiry to first session<br/>in <span class="accent">four steps.</span></h2>
         </div>
         <p class="lede">
           No contracts, no hard sells. We watch you play, tell you the truth, and only then
@@ -116,7 +196,6 @@
       <img src="assets/image-2.avif" alt="Player driving past a defender at FiDonce" />
     </div>
     <div class="slab__body">
-      <span class="eyebrow">Program · 01</span>
       <div class="slab__num">01<span style="color: var(--white);">.</span></div>
       <h2 class="slab__title">Training built<br/>for every level.</h2>
       <p class="lede" style="opacity: .82;">
@@ -143,7 +222,6 @@
       <img src="assets/image-4.avif" alt="FiDonce athlete shooting under the Underrated banner" />
     </div>
     <div class="slab__body">
-      <span class="eyebrow">Program · 02</span>
       <div class="slab__num">02<span style="color: var(--black);">.</span></div>
       <h2 class="slab__title">Real games. Real reps.<br/>Real exposure.</h2>
       <p class="lede" style="color: var(--ink-60);">
@@ -169,7 +247,6 @@
       <img src="assets/fidonce-location.jpeg" alt="The FiDonce gym in Chester, PA" />
     </div>
     <div class="slab__body">
-      <span class="eyebrow">Program · 03</span>
       <div class="slab__num">03<span style="color: var(--white);">.</span></div>
       <h2 class="slab__title">A real gym.<br/>Available to rent.</h2>
       <p class="lede" style="opacity: .82;">
@@ -178,13 +255,14 @@
         you can focus on the work.
       </p>
       <ul class="slab__detail-list">
-        <li><span><strong style="font-weight:700;">Court Rentals</strong> · Hourly &amp; recurring blocks</span></li>
+        <li><span><strong style="font-weight:700;">Court Rentals</strong> · Hourly &amp; recurring blocks · Book online</span></li>
         <li><span><strong style="font-weight:700;">Tournaments &amp; Events</strong> · Full-day buyouts</span></li>
         <li><span><strong style="font-weight:700;">Strength &amp; Conditioning</strong> · Basketball-specific programming</span></li>
         <li><span><strong style="font-weight:700;">Film &amp; Photo</strong> · Editorial-grade lighting available</span></li>
       </ul>
       <div class="cluster" style="margin-top: 16px;">
-        <a href="form.html" class="inline-cta" style="color: var(--white);">Inquire about rentals <span class="arrow">→</span></a>
+        <a href="facility.html" class="inline-cta" style="color: var(--white);">Tour the facility <span class="arrow">→</span></a>
+        <a href="https://www.goodrun.app/location/fidonce-player-development?exp=1" class="inline-cta" style="color: var(--orange); border-color: var(--orange);" target="_blank" rel="noopener">Book The Court</a>
       </div>
     </div>
   </section>
@@ -192,8 +270,7 @@
   <!-- INTRO PROMO -->
   <section class="section section--paper text-center">
     <div class="container">
-      <span class="eyebrow">Not sure where to start?</span>
-      <h2 style="margin-top: 24px;">Book a <span class="accent">$25 intro session.</span></h2>
+      <h2>Book a <span class="accent">$25 intro session.</span></h2>
       <p class="lede" style="margin: 24px auto 40px;">
         A 60-minute group diagnostic. Coach Eric and the FiDonce staff watch you play, ask
         the right questions, and tell you — honestly — where you fit and what to work on next.
@@ -207,8 +284,7 @@
     <div class="container">
       <div class="footer__top">
         <div>
-          <span class="eyebrow" style="color: var(--orange);">Want to run with us?</span>
-          <h2 class="footer__title" style="margin-top: 24px;">
+          <h2 class="footer__title">
             Most facilities hand you<br/>
             a schedule. <span class="accent">We start<br/>with a conversation.</span>
           </h2>

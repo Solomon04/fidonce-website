@@ -3,12 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FiDonce — Book Your Intro Evaluation ($25)</title>
-  <meta name="description" content="Start your FiDonce intake. A $25 group diagnostic with Coach Eric and staff in Chester, PA — we watch you play and tell you where you fit." />
+  <title>Book Your $25 Intro Basketball Evaluation — FiDonce, Chester PA</title>
+  <meta name="description" content="Book a $25 group basketball evaluation with Coach Eric Evans and the FiDonce staff in Chester, PA. 60-minute on-court diagnostic. No commitment beyond the session." />
+  <meta name="keywords" content="basketball evaluation Chester PA, basketball tryout Chester, book basketball lesson, Coach Eric Evans intake, $25 basketball evaluation" />
+  <meta name="author" content="FiDonce Player Development" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="geo.region" content="US-PA" />
+  <meta name="geo.placename" content="Chester, Pennsylvania" />
+
+  <link rel="canonical" href="https://fidonce.com/form" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FiDonce Player Development" />
+  <meta property="og:url" content="https://fidonce.com/form" />
+  <meta property="og:title" content="Book Your $25 Intro Evaluation · FiDonce, Chester PA" />
+  <meta property="og:description" content="60-minute group basketball diagnostic with Coach Eric Evans and FiDonce staff. No commitment beyond the session." />
+  <meta property="og:image" content="https://fidonce.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The FiDonce facility in Chester, PA" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book Your $25 Intro Evaluation · FiDonce, Chester PA" />
+  <meta name="twitter:description" content="60-minute group basketball diagnostic with Coach Eric Evans and FiDonce staff." />
+  <meta name="twitter:image" content="https://fidonce.com/assets/og-image.jpg" />
+
   <link rel="preconnect" href="https://use.typekit.net" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css"></noscript>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data: Breadcrumbs + ContactPage + Offer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fidonce.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Book Evaluation", "item": "https://fidonce.com/form" }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "url": "https://fidonce.com/form",
+        "name": "Book Your Intro Evaluation",
+        "about": { "@id": "https://fidonce.com/#business" }
+      },
+      {
+        "@type": "Offer",
+        "name": "Intro Basketball Evaluation",
+        "description": "60-minute group diagnostic with Coach Eric Evans and the FiDonce staff. Real reps, honest feedback, and a placement plan.",
+        "price": "25.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "category": "Basketball training",
+        "seller": { "@id": "https://fidonce.com/#business" },
+        "areaServed": { "@type": "City", "name": "Chester, PA" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -22,8 +84,8 @@
       <div class="nav__links">
         <a href="index.html">Home</a>
         <a href="offerings.html">Programs</a>
-        <a href="offerings.html#facility">Facility</a>
-        <a href="index.html#story">About</a>
+        <a href="facility.html">Facility</a>
+        <a href="about.html">About</a>
       </div>
       <a href="form.html" class="nav__cta" aria-current="page">Book Evaluation</a>
     </div>
@@ -34,7 +96,6 @@
     <aside class="form-page__media" aria-hidden="true">
       <img src="assets/fidonce-location.jpeg" alt="" />
       <div class="form-page__media-overlay">
-        <span class="eyebrow">Intro Evaluation · $25</span>
         <h2 class="display" style="font-size: clamp(2.5rem, 6vw, 4.75rem); line-height: 0.92;">
           Train<br/>here.
         </h2>
@@ -49,13 +110,11 @@
     <section class="form-page__body">
       <header class="flex-between" style="align-items: flex-end;">
         <div>
-          <span class="eyebrow">Player Intake · Step 1 of 3</span>
-          <h1 style="margin-top: 16px; font-size: clamp(1.75rem, 3vw, 2.5rem);">
+          <h1 style="font-size: clamp(1.75rem, 3vw, 2.5rem);">
             Start your<br/><span class="accent">journey.</span>
           </h1>
         </div>
         <div style="text-align: right;">
-          <div class="eyebrow" style="color: var(--ink-60);">Intro Session</div>
           <div style="font-family: var(--f-display); font-weight: 700; font-size: 2.25rem; line-height: 1;">$25</div>
         </div>
       </header>
@@ -88,9 +147,6 @@
       <!-- FORM -->
       <form class="stack-6" autocomplete="off">
         <div>
-          <span class="eyebrow" style="color: var(--ink-60);">Player Basics</span>
-          <hr class="rule" style="margin-top: 8px; margin-bottom: 24px;" />
-
           <div class="field-row">
             <div class="field">
               <label for="first">Athlete first name</label>
@@ -124,8 +180,6 @@
         </div>
 
         <div>
-          <span class="eyebrow" style="color: var(--ink-60);">Primary Interests</span>
-          <hr class="rule" style="margin-top: 8px; margin-bottom: 16px;" />
           <div class="check-list">
             <label class="check-row">
               <input type="checkbox" />
@@ -148,8 +202,7 @@
 
         <!-- NEXT-STEP CALLOUT -->
         <div style="background: var(--paper); padding: 32px; border-left: 3px solid var(--orange);">
-          <span class="eyebrow" style="color: var(--ink-60);">Next · The intro session</span>
-          <h3 style="margin-top: 12px;">Before we place you, we watch you play.</h3>
+          <h3>Before we place you, we watch you play.</h3>
           <p class="text-muted" style="margin-top: 12px; font-size: 0.9375rem;">
             $25 group diagnostic — 60 minutes, on our court, with our staff. No commitment beyond the session.
           </p>

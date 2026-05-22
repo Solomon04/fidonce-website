@@ -3,12 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FiDonce — Develop People. Player Development in Chester, PA.</title>
-  <meta name="description" content="FiDonce is the standard of player development in Chester, PA. Founded by Eric Evans — All-American, Cheyney University; brother and first coach to NBA's Tyreke Evans." />
+  <title>FiDonce — Develop People. Elite Basketball Player Development in Chester, PA.</title>
+  <meta name="description" content="FiDonce is the standard of basketball player development in Chester, PA. Founded by Eric Evans — All-American, Cheyney University; brother and first coach to NBA Rookie of the Year Tyreke Evans." />
+  <meta name="keywords" content="basketball training Chester PA, player development, AAU Chester, Eric Evans, Tyreke Evans, basketball camps Pennsylvania, youth basketball Chester" />
+  <meta name="author" content="FiDonce Player Development" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="geo.region" content="US-PA" />
+  <meta name="geo.placename" content="Chester, Pennsylvania" />
+
+  <link rel="canonical" href="https://fidonce.com/" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FiDonce Player Development" />
+  <meta property="og:url" content="https://fidonce.com/" />
+  <meta property="og:title" content="FiDonce — Develop People. The Standard of Chester." />
+  <meta property="og:description" content="Elite basketball player development in Chester, PA. Founded by Eric Evans, brother and first coach to NBA Rookie of the Year Tyreke Evans." />
+  <meta property="og:image" content="https://fidonce.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Coach Eric Evans on the court at FiDonce in Chester, PA" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FiDonce — Develop People. The Standard of Chester." />
+  <meta name="twitter:description" content="Elite basketball player development in Chester, PA. Founded by Eric Evans." />
+  <meta name="twitter:image" content="https://fidonce.com/assets/og-image.jpg" />
+
   <link rel="preconnect" href="https://use.typekit.net" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css"></noscript>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data: LocalBusiness + Person + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "SportsActivityLocation"],
+        "@id": "https://fidonce.com/#business",
+        "name": "FiDonce Player Development",
+        "alternateName": "FiDonce",
+        "description": "Elite basketball player development in Chester, PA. Group training, private lessons, AAU competition, and facility rentals.",
+        "url": "https://fidonce.com/",
+        "logo": "https://fidonce.com/fidonce-logo.avif",
+        "image": "https://fidonce.com/assets/og-image.jpg",
+        "telephone": "+1-484-485-0495",
+        "email": "info@fidonce.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chester",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Chester, PA" },
+          { "@type": "City", "name": "Philadelphia, PA" },
+          { "@type": "AdministrativeArea", "name": "Delaware County, PA" }
+        ],
+        "sport": "Basketball",
+        "founder": { "@id": "https://fidonce.com/#founder" },
+        "founders": [{ "@id": "https://fidonce.com/#founder" }]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://fidonce.com/#founder",
+        "name": "Eric Evans",
+        "jobTitle": "Founder & Head Coach",
+        "worksFor": { "@id": "https://fidonce.com/#business" },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Cheyney University of Pennsylvania"
+        },
+        "knowsAbout": ["Basketball coaching", "Player development", "AAU basketball", "Youth athletics"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://fidonce.com/#website",
+        "url": "https://fidonce.com/",
+        "name": "FiDonce",
+        "publisher": { "@id": "https://fidonce.com/#business" },
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -34,8 +119,8 @@
       <div class="nav__links">
         <a href="index.html" aria-current="page">Home</a>
         <a href="offerings.html">Programs</a>
-        <a href="offerings.html#facility">Facility</a>
-        <a href="#story">About</a>
+        <a href="facility.html">Facility</a>
+        <a href="about.html">About</a>
       </div>
       <a href="form.html" class="nav__cta">Book Evaluation</a>
     </div>
@@ -47,7 +132,6 @@
       <img src="assets/image-1.avif" alt="Coach Eric Evans on the court at FiDonce" />
     </div>
     <div class="hero__inner container">
-      <span class="eyebrow hero__eyebrow">01 — FiDonce Player Development · Chester, PA</span>
       <h1 class="display hero__headline">
         Develop<br />
         <span class="accent">people.</span>
@@ -98,7 +182,6 @@
           <span class="split__caption">Eric Evans · Founder & Head Coach</span>
         </div>
         <div class="split__body">
-          <span class="eyebrow">02 — A Legacy of Mentorship</span>
           <h2>From All-American<br/>to All-In on Chester.</h2>
           <p class="lede">
             After a standout career at Cheyney University, Coach Eric Evans came home to Chester
@@ -122,11 +205,10 @@
     <div class="container">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">03 — Wall of Fame</span>
-          <h2 style="margin-top: 16px;">Athletes who started here<br/>and kept going.</h2>
+          <h2>Athletes who started here<br/>and kept going.</h2>
         </div>
         <p class="lede">
-          From AAU courts in Chester to the NBA, college programs, and pro leagues across Europe.
+          From this year's high school class to NCAA programs to the NBA.
           The development is the same. The standard never moves.
         </p>
       </div>
@@ -148,24 +230,24 @@
         </div>
         <div class="alumni__card">
           <div class="alumni__photo">
-            <img src="assets/dion-waiters.webp" alt="Dion Waiters" />
+            <img src="assets/basil-laster.webp" alt="Basil Laster" />
           </div>
-          <div class="alumni__name">Dion Waiters</div>
-          <div class="alumni__detail">NBA · Syracuse</div>
+          <div class="alumni__name">Basil Laster</div>
+          <div class="alumni__detail">NCAA · UT Arlington Mavericks</div>
         </div>
         <div class="alumni__card">
           <div class="alumni__photo">
-            <img src="assets/jameer-nelson.jpg" alt="Jameer Nelson" />
+            <img src="assets/nolan-waldon.webp" alt="Nolan Waldon" />
           </div>
-          <div class="alumni__name">Jameer Nelson</div>
-          <div class="alumni__detail">NBA All-Star · Saint Joseph's</div>
+          <div class="alumni__name">Nolan Waldon</div>
+          <div class="alumni__detail">NCAA · Washington College (MD)</div>
         </div>
         <div class="alumni__card">
           <div class="alumni__photo">
-            <img src="assets/rakeem-christmas.jpg" alt="Rakeem Christmas" />
+            <img src="assets/yasir-turner.jpg" alt="Yasir Turner" />
           </div>
-          <div class="alumni__name">Rakeem Christmas</div>
-          <div class="alumni__detail">NBA · Syracuse</div>
+          <div class="alumni__name">Yasir Turner</div>
+          <div class="alumni__detail">HS · Archbishop Carroll · Class of '28</div>
         </div>
       </div>
     </div>
@@ -176,8 +258,7 @@
     <div class="container">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">04 — What We Run</span>
-          <h2 style="margin-top: 16px;">Three programs.<br/>One standard.</h2>
+          <h2>Three programs.<br/>One standard.</h2>
         </div>
         <p class="lede" style="color: rgba(255,255,255,.7);">
           Whether you're a third-grader picking up a ball or a high schooler chasing a scholarship,
@@ -213,8 +294,7 @@
     <div class="container">
       <div class="footer__top">
         <div>
-          <span class="eyebrow" style="color: var(--orange);">Want to run with us?</span>
-          <h2 class="footer__title" style="margin-top: 24px;">
+          <h2 class="footer__title">
             Most facilities hand you<br/>
             a schedule. <span class="accent">We start<br/>with a conversation.</span>
           </h2>

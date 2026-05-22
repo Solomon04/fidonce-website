@@ -14,6 +14,8 @@ Static marketing site for FiDonce Player Development — Chester, PA.
 |------|-----|---------|
 | `index.html` | `/` | Homepage — Develop people. |
 | `offerings.html` | `/offerings` | Programs · Training, AAU, Facility |
+| `facility.html` | `/facility` | Court rentals, events, training add-ons |
+| `about.html` | `/about` | The story · Founder Eric Evans |
 | `form.html` | `/form` | $25 intro evaluation intake |
 
 Clean URLs are enabled in `vercel.json`, so `/offerings` resolves to `offerings.html` in production.
@@ -41,13 +43,33 @@ Connected to Vercel via Git. Push to `main` → auto-deploys. First-time setup:
 .
 ├── index.html              # Homepage
 ├── offerings.html          # Programs page
+├── facility.html           # Court rentals, events, add-ons
+├── about.html              # About / founder story
 ├── form.html               # Intake form
 ├── styles.css              # Brand system (tokens, components)
-├── assets/                 # Photography (players, gym, coaching)
+├── assets/                 # Photography + og-image.jpg
 ├── fidonce-logo.avif       # Brand mark
+├── favicon.png             # 32×32 PNG favicon
+├── apple-touch-icon.png    # 180×180 iOS home-screen icon
+├── sitemap.xml             # XML sitemap (submit to Search Console)
+├── robots.txt              # Allow all, points to sitemap
 ├── vercel.json             # Clean URLs + cache headers
 └── README.md
 ```
+
+## SEO
+
+Each page ships with:
+- Unique `<title>`, `<meta description>`, and `<meta keywords>`
+- Canonical URL
+- Open Graph + Twitter Card meta (OG image lives at `/assets/og-image.jpg`)
+- Geo meta (US-PA / Chester) for local search
+- Page-specific JSON-LD structured data:
+  - **Home:** `LocalBusiness` + `SportsActivityLocation`, `Person` (Eric Evans), `WebSite`
+  - **Programs:** `BreadcrumbList`, three `Service` entries (Training, AAU, Facility) + `Offer`
+  - **Form:** `BreadcrumbList`, `ContactPage`, `Offer` ($25 intro)
+
+After deploying, submit `https://fidonce.com/sitemap.xml` to Google Search Console (Marketing → SEO Tools → Sitemap submission). The site is referenced as `https://fidonce.com` throughout — if the production domain differs, find-replace it across `*.html`, `sitemap.xml`, and `robots.txt`.
 
 ## Brand notes
 
