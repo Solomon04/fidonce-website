@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FiDonce — Book Your Intro Evaluation ($25)</title>
+  <meta name="description" content="Start your FiDonce intake. A $25 group diagnostic with Coach Eric and staff in Chester, PA — we watch you play and tell you where you fit." />
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://use.typekit.net/spc3qbq.css"></noscript>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="FiDonce home">
+        <img src="fidonce-logo.avif" alt="" />
+        <span>FiDonce</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="offerings.html">Programs</a>
+        <a href="offerings.html#facility">Facility</a>
+        <a href="index.html#story">About</a>
+      </div>
+      <a href="form.html" class="nav__cta" aria-current="page">Book Evaluation</a>
+    </div>
+  </nav>
+
+  <main class="form-page">
+    <!-- LEFT: PHOTO -->
+    <aside class="form-page__media" aria-hidden="true">
+      <img src="assets/fidonce-location.jpeg" alt="" />
+      <div class="form-page__media-overlay">
+        <span class="eyebrow">Intro Evaluation · $25</span>
+        <h2 class="display" style="font-size: clamp(2.5rem, 6vw, 4.75rem); line-height: 0.92;">
+          Train<br/>here.
+        </h2>
+        <p class="lede" style="opacity: .85; max-width: 36ch;">
+          The same court that's developed AAU teams, college recruits, and a Rookie of the Year.
+          Show us how you play. We'll tell you what's next.
+        </p>
+      </div>
+    </aside>
+
+    <!-- RIGHT: FORM -->
+    <section class="form-page__body">
+      <header class="flex-between" style="align-items: flex-end;">
+        <div>
+          <span class="eyebrow">Player Intake · Step 1 of 3</span>
+          <h1 style="margin-top: 16px; font-size: clamp(1.75rem, 3vw, 2.5rem);">
+            Start your<br/><span class="accent">journey.</span>
+          </h1>
+        </div>
+        <div style="text-align: right;">
+          <div class="eyebrow" style="color: var(--ink-60);">Intro Session</div>
+          <div style="font-family: var(--f-display); font-weight: 700; font-size: 2.25rem; line-height: 1;">$25</div>
+        </div>
+      </header>
+
+      <!-- STEPS -->
+      <ol class="steps">
+        <li class="step step--active">
+          <span class="step__num">1</span>
+          <div>
+            <div class="step__label">The Player</div>
+            <div class="step__sub">Name · age · level</div>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">2</span>
+          <div>
+            <div class="step__label">The Goals</div>
+            <div class="step__sub">Programs &amp; interests</div>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">3</span>
+          <div>
+            <div class="step__label">The Session</div>
+            <div class="step__sub">Availability &amp; payment</div>
+          </div>
+        </li>
+      </ol>
+
+      <!-- FORM -->
+      <form class="stack-6" autocomplete="off">
+        <div>
+          <span class="eyebrow" style="color: var(--ink-60);">Player Basics</span>
+          <hr class="rule" style="margin-top: 8px; margin-bottom: 24px;" />
+
+          <div class="field-row">
+            <div class="field">
+              <label for="first">Athlete first name</label>
+              <input id="first" type="text" placeholder="Jordan" />
+            </div>
+            <div class="field">
+              <label for="last">Athlete last name</label>
+              <input id="last" type="text" placeholder="Smith" />
+            </div>
+          </div>
+
+          <div class="field" style="margin-top: 24px;">
+            <label for="grade">Current grade / age</label>
+            <select id="grade">
+              <option>Elementary (3rd–5th)</option>
+              <option>Middle School (6th–8th)</option>
+              <option>High School (9th–12th)</option>
+              <option>Post-Grad / Pro</option>
+            </select>
+          </div>
+
+          <div class="field" style="margin-top: 24px;">
+            <span class="field__label">Skill level — self assessment</span>
+            <div class="choice-grid" style="margin-top: 8px;" data-name="skill">
+              <button type="button" class="choice" data-value="beginner">Beginner</button>
+              <button type="button" class="choice choice--active" data-value="intermediate">Intermediate</button>
+              <button type="button" class="choice" data-value="elite">Elite</button>
+              <input type="hidden" name="skill" value="intermediate" />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="eyebrow" style="color: var(--ink-60);">Primary Interests</span>
+          <hr class="rule" style="margin-top: 8px; margin-bottom: 16px;" />
+          <div class="check-list">
+            <label class="check-row">
+              <input type="checkbox" />
+              <span>Weekly skill clinics <span class="text-muted" style="font-weight: 400;">— most popular</span></span>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" />
+              <span>Private 1-on-1 lessons</span>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" />
+              <span>AAU team tryouts</span>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" />
+              <span>Summer camp 2026</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- NEXT-STEP CALLOUT -->
+        <div style="background: var(--paper); padding: 32px; border-left: 3px solid var(--orange);">
+          <span class="eyebrow" style="color: var(--ink-60);">Next · The intro session</span>
+          <h3 style="margin-top: 12px;">Before we place you, we watch you play.</h3>
+          <p class="text-muted" style="margin-top: 12px; font-size: 0.9375rem;">
+            $25 group diagnostic — 60 minutes, on our court, with our staff. No commitment beyond the session.
+          </p>
+          <button type="button" class="btn btn--primary btn--lg" style="margin-top: 24px; width: 100%;">
+            Continue to availability &amp; payment <span class="arrow">→</span>
+          </button>
+        </div>
+      </form>
+
+      <footer class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.16em; padding-top: 32px; border-top: 1px solid var(--ink-12);">
+        FiDonce Player Development · Secure Checkout
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    // Choice toggle — buttons drive a hidden input
+    document.querySelectorAll('.choice-grid').forEach(group => {
+      const hidden = group.querySelector('input[type="hidden"]');
+      group.addEventListener('click', e => {
+        const choice = e.target.closest('.choice');
+        if (!choice) return;
+        group.querySelectorAll('.choice').forEach(c => c.classList.remove('choice--active'));
+        choice.classList.add('choice--active');
+        if (hidden) hidden.value = choice.dataset.value;
+      });
+    });
+  </script>
+
+</body>
+</html>
