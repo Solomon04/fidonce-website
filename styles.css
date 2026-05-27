@@ -379,6 +379,36 @@ p { line-height: 1.55; }
   .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--ink-12); }
 }
 
+/* Multi-stat list (for credentials column) */
+.stat__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.stat__list-item { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: baseline; }
+.stat__list-num {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  min-width: 1.2em;
+}
+.stat__list-num .accent { color: var(--orange); }
+.stat__list-label {
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1.45;
+  color: var(--ink-60);
+}
+.stat__list-mvp { color: var(--orange); font-weight: 600; }
+/* When a .stats row mixes big-number cells with a list cell, stack on mobile */
+@media (max-width: 760px) {
+  .stats--mixed { grid-template-columns: 1fr; }
+  .stats--mixed .stat { border-right: none; border-bottom: 1px solid var(--ink-12); }
+  .stats--mixed .stat:last-child { border-bottom: none; }
+  .stats--mixed .stat:nth-child(2) { border-right: none; }
+}
+
 /* Photo split / editorial 60-40 -------------------------------------------- */
 .split {
   display: grid;
